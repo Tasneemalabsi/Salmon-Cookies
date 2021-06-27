@@ -1,4 +1,18 @@
 body {
     background-color: black;
     color: aqua;
+    height: 1000px;
+    padding: 3%;
+    margin: 2%;
+
 }
+ul {
+    background-color: violet;
+    color: black;
+    width : 50%;
+line-height: 150 px;
+padding: 3%;
+margin: 5%;
+}
+
+
