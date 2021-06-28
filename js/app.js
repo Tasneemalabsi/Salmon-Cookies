@@ -32,7 +32,7 @@ let seattle= { minCustomers : 23,
                 console.log(this.totalcookies);
                
              }
-             li2.textContent= 'total = ' + this.totalcookies;
+             li2.textContent= 'total = ' + (this.totalcookies-this.totalcookiesPerHour[this.totalcookiesPerHour.length-1]);
 
            
           
@@ -76,7 +76,7 @@ let Tokyo = { minCustomers : 3,
                 console.log(this.totalcookies);
                
              }
-             li2.textContent= 'total = ' + this.totalcookies;
+             li2.textContent= 'total = ' + (this.totalcookies-this.totalcookiesPerHour[this.totalcookiesPerHour.length-1]);
 
            
           
@@ -120,7 +120,7 @@ let Dubai = { minCustomers : 11,
                 console.log(this.totalcookies);
                
              }
-             li2.textContent= 'total = ' + this.totalcookies;
+             li2.textContent= 'total = ' + (this.totalcookies-this.totalcookiesPerHour[this.totalcookiesPerHour.length-1]);
 
            
           
@@ -163,7 +163,7 @@ let Paris= { minCustomers : 20,
                 console.log(this.totalcookies);
                
              }
-             li2.textContent= 'total = ' + this.totalcookies;
+             li2.textContent= 'total = ' + (this.totalcookies-this.totalcookiesPerHour[this.totalcookiesPerHour.length-1]);
 
            
           
@@ -206,7 +206,7 @@ let Lima= { minCustomers : 2,
                 console.log(this.totalcookies);
                
              }
-             li2.textContent= 'total = ' + this.totalcookies;
+             li2.textContent= 'total = ' + (this.totalcookies-this.totalcookiesPerHour[this.totalcookiesPerHour.length-1]);
 
            
           
