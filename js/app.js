@@ -101,10 +101,8 @@ let lastTotal=0
         for (let j=0; j<city.length; j++) {
         totals=totals + city[j].totalcookiesPerHour[i];
         //let tdFooter = document.createElement('td');
-        
-        
-       
-    }
+    
+        }
     let tdFooter = document.createElement('td');
     window.td=tdFooter
     tdFooter.textContent= totals;
@@ -115,6 +113,7 @@ for (let j=0; j<city.length; j++) {
     lastTotal=lastTotal+city[j].totalcookies-(city[j].totalcookiesPerHour[city[j].totalcookiesPerHour.length-1]);
 }
         td.textContent=lastTotal;
+        //footer.appendChild(td);
 }
     TableFooter();
 
