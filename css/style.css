@@ -4,43 +4,81 @@ body {
     height: 1000px;
     padding: 3%;
     margin: 2%;
-    position: relative;
+    
 
 }
-ul {
+main nav {
+    clear: both;
     background-color: violet;
     color: black;
     width : 50%;
     line-height: 150 px;
 padding: 3%;
 margin: 5%;
+list-style-type:none ;
+}
+ul li a {
+    text-decoration: none;
+}
+ul li {
+    list-style-type: none;
 }
 
+}
+header {
+    display: inline-block;
+    width: 300px;
+}
+.contactinfo {
+    float: right;
+    width: 200px;
+    margin-top: 5%;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    }
+    .title{
+        float:left;
+        clear:both;
+    }
+    
 
 h1 {
     font-family: 'Indie Flower', cursive;
     text-align: center;
     font-size:80px;
     color: white;
-    position: sticky;
    
 }
 
-p, h2{
-    font-family: 'Comfortaa', cursive;
-    color: violet;
-    
-}
+
 table, td, th{
     background-color: aqua;
     color: black;
     border: 1px solid black;
     font-family: 'Cinzel', serif;
 }
-#indexul{
-    background-color: aqua;
-    color: black;
+
+article {
+    display: flex;
+  }
+  
+  .images {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  #hours {
+      color:white;
+      font-size: large;
+      font-weight: bold;
+  }
+
+.salesLink {
+    font-size: large;
+    padding: 2%;
 }
+
 
 
 
