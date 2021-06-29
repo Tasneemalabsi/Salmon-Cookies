@@ -91,22 +91,30 @@ console.log(city);
 
 function TableFooter () {
    
-
+let lastTotal=0
     let footer=document.createElement('tfoot');
     footer.textContent='totals';
     table.appendChild(footer);
-    for (let i=0; i<hours.length; i++) {
+    for (let i=0; i<hours.length+1; i++) {
         let totals=0;
     
         for (let j=0; j<city.length; j++) {
         totals=totals + city[j].totalcookiesPerHour[i];
         //let tdFooter = document.createElement('td');
+        
+        
        
     }
     let tdFooter = document.createElement('td');
+    window.td=tdFooter
     tdFooter.textContent= totals;
     footer.appendChild(tdFooter);
 }
+
+for (let j=0; j<city.length; j++) {
+    lastTotal=lastTotal+city[j].totalcookies-(city[j].totalcookiesPerHour[city[j].totalcookiesPerHour.length-1]);
+}
+        td.textContent=lastTotal;
 }
     TableFooter();
 
