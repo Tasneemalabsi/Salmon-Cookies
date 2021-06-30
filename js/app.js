@@ -50,8 +50,8 @@ TableHeader();
 
 City.prototype.custPerHour = function(min,max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
+    
 };
-
 
 City.prototype.render= function () {
     
@@ -91,34 +91,56 @@ console.log(city);
 
 function TableFooter () {
    
-let lastTotal=0
-    let footer=document.createElement('tfoot');
-    footer.textContent='totals';
-    table.appendChild(footer);
-    for (let i=0; i<hours.length+1; i++) {
-        let totals=0;
+    let lastTotal=0;
+        let footer=document.createElement('tfoot');
+        window.footer2=footer;
+        footer.textContent='totals';
+        table.appendChild(footer);
+        for (let i=0; i<hours.length+1; i++) {
+            let totals=0;
+        
+            for (let j=0; j<city.length; j++) {
+            totals=totals + city[j].totalcookiesPerHour[i];
+            
+        
+            }
+        let tdFooter = document.createElement('td');
+        window.td=tdFooter;
+        tdFooter.textContent= totals;
+        footer.appendChild(tdFooter);
+    }
     
-        for (let j=0; j<city.length; j++) {
-        totals=totals + city[j].totalcookiesPerHour[i];
-        //let tdFooter = document.createElement('td');
-    
-        }
-    let tdFooter = document.createElement('td');
-    window.td=tdFooter
-    tdFooter.textContent= totals;
-    footer.appendChild(tdFooter);
-}
+    for (let j=0; j<city.length; j++) {
+        lastTotal=lastTotal+city[j].totalcookies-(city[j].totalcookiesPerHour[city[j].totalcookiesPerHour.length-1]);
+    }
+            td.textContent=lastTotal;
+            
+    }
+        
 
-for (let j=0; j<city.length; j++) {
-    lastTotal=lastTotal+city[j].totalcookies-(city[j].totalcookiesPerHour[city[j].totalcookiesPerHour.length-1]);
-}
-        td.textContent=lastTotal;
-        //footer.appendChild(td);
-}
     TableFooter();
 
 
 
+
+    let newForm= document.getElementById('newForm');
+    newForm.addEventListener('submit', addCity);
+    function addCity (event) {
+        event.preventDefault();
+        let name = event.target.city.value;
+        let minCustomers= event.target.minCustomers.value;
+        let maxCustomers = event.target.maxCustomers.value;
+        let avNumPerh = event.target.AvgNumber.value;
+        let addedCity= new City (minCustomers,maxCustomers,avNumPerh,name);
+      
+  addedCity.custPerHour(minCustomers,maxCustomers);
+  addedCity.render();
+  footer2.textContent= null;
+  TableFooter();
+  
+        }
+
+    
 
 
 
