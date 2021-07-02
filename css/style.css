@@ -1,13 +1,13 @@
 body {
     background-color: black;
-    color: aqua;
-    height: 1000px;
+    height: 1900px;
     padding: 3%;
     margin: 2%;
+    position: relative;
     
 
 }
-main nav {
+/* main nav {
     clear: both;
     background-color: violet;
     color: black;
@@ -16,37 +16,52 @@ main nav {
 padding: 3%;
 margin: 5%;
 list-style-type:none ;
-}
-ul li a {
+} */
+.contactinfo li a {
     text-decoration: none;
+    color: gray;
+    font-family: 'Otomanopee One', sans-serif;
+
 }
-ul li {
+.contactinfo li {
     list-style-type: none;
+    padding-left: 10px;
 }
 
 }
 header {
     display: inline-block;
-    width: 300px;
+    width: 350px;
+    height: 100px;
+    position: relative;
 }
 .contactinfo {
     float: right;
-    width: 200px;
-    margin-top: 5%;
-    color: white;
+    margin-top: 6%;
+    color: lightblue;
+    display: flex;
     font-size: large;
     font-weight: bold;
+    position: relative;
+    width: 40%;
+    padding-top: 20px;
+    margin-right:0px;
+    padding-right: 0px;
+    
     }
     .title{
         float:left;
         clear:both;
+        top:0;
+        position:sticky;
+        width: 50%;
     }
     
 
 h1 {
     font-family: 'Indie Flower', cursive;
     text-align: center;
-    font-size:80px;
+    font-size:60px;
     color: white;
    
 }
@@ -56,29 +71,128 @@ table, td, th{
     background-color: aqua;
     color: black;
     border: 1px solid black;
-    font-family: 'Cinzel', serif;
+    font-family: 'Cabin', sans-serif;
 }
 
-article {
+#row1 {
     display: flex;
   }
   
   .images {
     flex: 33.33%;
     padding: 5px;
+      width: 200px;
+      height: 200px;
+      margin-top: 5%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin-bottom: 5%;
   }
 
-  #hours {
-      color:white;
-      font-size: large;
-      font-weight: bold;
+  #row2 {
+    display: flex;
   }
+  
+  .images2 {
+    flex: 33.33%;
+    padding: 5px;
+      width: 200px;
+      height: 200px;
+  } 
 
 .salesLink {
     font-size: large;
     padding: 2%;
 }
 
+h2 {
+    font-size: x-large;
+    color:lightblue;
+    text-align: center;
+}
+#welcome img{
+    width: 750px;
+    height: 400px;
+    margin-left: 12%;
+    margin-right: 3%;
+}
+#welcome {
+    clear: both;
+    padding-top: 4%;
+}
 
 
+.numbers a {
+    color: blue;
+   text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    
+  }
+  
+  .numbers a.active {
+    background-color: dodgerblue;
+    color:black;
+  }
+
+  .numbers a:hover:not(.active) {background-color: #ddd;}
+  .numbers {
+    margin-right: 3%;
+    margin-left: 25%;
+    width: 60%;
+  }
+
+  #stores p {
+      color:lightblue;
+      font-size: large;
+  }
+  #cities li {
+      display: inline-block;
+      color:white;
+      width: 100;
+      padding-right: 5%;
+      
+  }
+#cities {
+    text-align: center;
+}
+
+#design {
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+footer p {
+    text-align: center;
+    font-size: small;
+    color: gray;
+    font-family: 'Otomanopee One', sans-serif;
+
+}
+
+#icons {
+    width: 20%;
+    position: relative;
+    margin-top:1% ;
+    margin-left: 46%;
+    margin-right: 4%;
+
+    
+}
+
+footer {
+    line-height: 50px;
+    width: 100%;
+}
+
+main {
+    margin-top: 5%;
+    font-family: 'Noto Serif', serif;
+}
+
+
+h3 {
+    color: lightblue;
+}
 

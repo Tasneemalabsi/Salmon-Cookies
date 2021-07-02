@@ -128,9 +128,9 @@ function TableFooter () {
     function addCity (event) {
         event.preventDefault();
         let name = event.target.city.value;
-        let minCustomers= event.target.minCustomers.value;
-        let maxCustomers = event.target.maxCustomers.value;
-        let avNumPerh = event.target.AvgNumber.value;
+        let minCustomers= Number(event.target.minCustomers.value);
+        let maxCustomers = Number(event.target.maxCustomers.value);
+        let avNumPerh = Number(event.target.AvgNumber.value);
         let addedCity= new City (minCustomers,maxCustomers,avNumPerh,name);
       
   addedCity.custPerHour(minCustomers,maxCustomers);
