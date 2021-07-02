@@ -37,14 +37,14 @@ header {
 }
 .contactinfo {
     float: right;
-    margin-top: 6%;
+    margin-top: 5%;
     color: lightblue;
     display: flex;
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
     position: relative;
     width: 40%;
-    padding-top: 20px;
+    padding-top: 15px;
     margin-right:0px;
     padding-right: 0px;
     
